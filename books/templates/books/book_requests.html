@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Books requested</title>
+  </head>
+  <body>
+    {% if books %}
+    {% for book in books %}
+    <h1>{{book.author}}</h1><h1>{{book.book_name}}</h1>
+    <br>
+    {% endfor %}
+    {% else %}
+    <h1>No Book requests</h1>
+    {% endif %}
+  </body>
+</html>
